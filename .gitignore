@@ -1,0 +1,17 @@
+config/
+node_modules/
+vendor/
+venv/
+.DS_Store
+*.zip
+*.sql
+.env
+uploads/
+storage/
+src/desks/*/config.php
+src/bootstrap.php
+bin/setup.php
+bin/demo.php
+bin/mail-worker.php
+src/desks/rd/seed_data.php
+tests/

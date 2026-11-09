@@ -1,0 +1,48 @@
+<?php
+function submitRequest(array $u,array $p):int {
+ $m=required($p,'module');if(empty($u['active'])||!isset(modules()[$m])||!canSubmit($u,$m))throw new RuntimeException('You cannot submit this request.');$payload=[];$receiver=null;$department=$u['department'];$sessions=[];
+ if($m==='substitution'){
+ $errors=substitutionErrors($p,$u);if($errors)throw new SubstitutionValidation($errors);$department=$p['department'];$p['transportation']=$p['transportation']==='Personal (with mileage)'?'Personal with mileage':$p['transportation'];if($p['substitution_required']==='No')$p['sessions']=[];$payload['no_substitution_reason']=$p['substitution_required']==='No'?trim($p['no_substitution_reason']):'';
+ foreach(['substitution_required','travel_start','travel_end','purpose_category','place','funding_agency','transportation']as $k)$payload[$k]=required($p,$k);
+ if(mb_strlen($payload['purpose_category'])>2000)throw new RuntimeException('Purpose must be no longer than 2,000 characters.');
+ $payload['purpose']=$payload['purpose_category']==='Other'&&!empty($p['purpose_other'])?required($p,'purpose_other'):$payload['purpose_category'];
+ if(!in_array($payload['transportation'],['Personal with mileage','Pool','Other'],true))throw new RuntimeException('Select valid transportation.');
+ if($payload['transportation']==='Other')required($p,'transport_details');
+ if(!in_array($payload['substitution_required'],['Yes','No']))throw new RuntimeException('Select whether substitution is required.');
+ foreach(['travel_start','travel_end']as $k)if(!dateValid($payload[$k]))throw new RuntimeException('Use valid travel dates.');
+ if($payload['travel_end']<$payload['travel_start'])throw new RuntimeException('Travel and return dates must be in order.');
+ $payload['calendar_days']=(new DateTimeImmutable($payload['travel_start']))->diff(new DateTimeImmutable($payload['travel_end']))->days+1;
+ $payload['transport_details']=$payload['transportation']==='Other'?required($p,'transport_details'):'';$payload['resource_link']=trim($p['resource_link']??'');if($payload['resource_link']&&!filter_var($payload['resource_link'],FILTER_VALIDATE_URL))throw new RuntimeException('Enter a valid resource URL.');if($payload['resource_link']&&!in_array(parse_url($payload['resource_link'],PHP_URL_SCHEME),['https','http']))throw new RuntimeException('Resource links must use HTTPS or HTTP.');
+ foreach($p['sessions']??[] as $s){if(empty($s['day']))continue;foreach(['kind','day','start_time','end_time','module_name','module_code','classroom']as $k)required($s,$k);if(!in_array($s['kind'],['Affected class','Compensation'])||!dateValid($s['day'])||!timeValid($s['start_time'])||!timeValid($s['end_time'])||$s['end_time']<=$s['start_time'])throw new RuntimeException('Check the class dates and times.');if($s['kind']==='Affected class'&&($s['day']<$payload['travel_start']||$s['day']>$payload['travel_end']))throw new RuntimeException('Affected classes must fall within the travel dates.');$s['faculty_id']=empty($s['faculty_id'])?null:(int)$s['faculty_id'];if($s['faculty_id']&&!one("SELECT id FROM users WHERE id=? AND active=1 AND role <> 'student'",[$s['faculty_id']]))throw new RuntimeException('Select an active faculty member.');$s['students']=filter_var($s['students']??'',FILTER_VALIDATE_INT,['options'=>['min_range'=>1]]);if($s['students']===false)throw new RuntimeException('Student count must be a positive number.');$sessions[]=$s;}
+ if($payload['substitution_required']==='Yes'&&!array_filter($sessions,fn($s)=>$s['kind']==='Affected class'))throw new RuntimeException('Add at least one affected class.');
+ if(!$department)throw new RuntimeException('Ask the administrator to assign your department.');$payload['approval_route']=approvalRouteForRole($u['role']);$status=initialApprovalStatus($payload['approval_route']);
+ }elseif($m==='consultation'){
+ foreach(['programme','purpose','booking_date']as $k)$payload[$k]=required($p,$k);
+ if(!in_array($payload['programme'],programmes(),true)||!in_array($payload['purpose'],['Research','Academic','Monitoring','Mentor-Mentee','Academic-Related'],true))throw new RuntimeException('Select a valid programme and purpose.');
+ if(attReady()){$appointment=consultationDetails($p);$receiver=$appointment['faculty'];$payload['slot_id']=$appointment['slot'];$payload['time']=$appointment['start'].' – '.$appointment['end'];$payload['location']=$appointment['location'];$payload['booking_mode']=$appointment['mode'];}
+ else { foreach(['programme','purpose','booking_date','slot_id']as $k)$payload[$k]=required($p,$k);if(!in_array($payload['programme'],programmes(),true)||!in_array($payload['purpose'],['Research','Academic','Monitoring','Mentor-Mentee','Academic-Related'],true))throw new RuntimeException('Select a valid programme and purpose.');$slot=one('SELECT s.* FROM slots s JOIN users u ON u.id=s.faculty_id WHERE s.id=? AND s.active=1 AND u.active=1',[$payload['slot_id']]);if(!$slot||!dateValid($payload['booking_date'])||(int)date('N',strtotime($payload['booking_date']))!==(int)$slot['weekday']||$payload['booking_date'].' '.$slot['start_time']<=date('Y-m-d H:i'))throw new RuntimeException('Choose a future date matching the timetable weekday.');$receiver=(int)$slot['faculty_id'];$payload['time']=$slot['start_time'].' – '.$slot['end_time'];$payload['location']=$slot['location'];$payload['timetable_checked']='Yes';$status='Requested';
+}
+ $status='Requested';
+ }elseif($m==='exam'){
+ foreach(['service','purpose','programme','year','semester','academic_year','collection_at','delivery']as $k)$payload[$k]=required($p,$k);if(!in_array($payload['programme'],programmes(),true)||!in_array($payload['year'],['1','2','3','4'])||!in_array($payload['semester'],['I','II'])||!in_array($payload['delivery'],['In person','Through email']))throw new RuntimeException('Select valid programme and collection details.');if(!preg_match('/^\d{4}(-\d{4})?$/',$payload['academic_year']))throw new RuntimeException('Use an academic year such as 2026 or 2026-2027.');if(!dateValid(substr($payload['collection_at'],0,10))||!timeValid(substr($payload['collection_at'],11,5)))throw new RuntimeException('Enter a valid collection date and time.');if($payload['service']==='Official document printing'&&empty($p['paper_acknowledgement']))throw new RuntimeException('Confirm the printing paper replacement requirement.');$payload['paper_acknowledgement']=!empty($p['paper_acknowledgement'])?'Confirmed':'Not applicable';$status='Submitted';
+ }else{
+ $payload=validateLibrary($p);$status='Submitted';
+ }
+ $payload['applicant_name']=$u['name'];
+ $payload['submission_channel']=!empty($p['_public_submission'])?'Public form (identity not authenticated)':'Signed-in user';
+ q('INSERT INTO requests(module,applicant_id,receiver_id,department,status,payload,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?)',[$m,$u['id'],$receiver,$department,$status,json_encode($payload,JSON_THROW_ON_ERROR),now(),now()]);$id=(int)db()->lastInsertId();
+ foreach($sessions as $s)q('INSERT INTO sessions(request_id,kind,day,start_time,end_time,module_name,module_code,faculty_id,classroom,students) VALUES(?,?,?,?,?,?,?,?,?,?)',[$id,$s['kind'],$s['day'],$s['start_time'],$s['end_time'],$s['module_name'],$s['module_code'],$s['faculty_id'],$s['classroom'],$s['students']]);
+ if($m==='consultation'&&!empty($payload['slot_id'])){try{q('INSERT INTO bookings(request_id,slot_id,day) VALUES(?,?,?)',[$id,$payload['slot_id'],$payload['booking_date']]);}catch(PDOException $ex){throw new RuntimeException('That consultation slot has already been booked. Choose another date or slot.');}}
+ if($m==='consultation'&&isset($appointment))q('INSERT INTO consultation_appointments(request_id,faculty_id,day,start_time,end_time) VALUES(?,?,?,?,?)',[$id,$receiver,$payload['booking_date'],$appointment['start'],$appointment['end']]);
+ foreach(['attachment'=>'Supporting document','invitation'=>'Invitation or nomination']as $field=>$label)storeUpload($field,$id,null,$label);audit($id,(int)$u['id'],'Submitted',$payload['submission_channel']);notifyRequest($id,'Submitted');if($m==='substitution')notifySubstitutes($id);return $id;
+}
+function libraryFields():array{return [
+ 'Current Awareness Service (CAS)'=>['updates'=>'Updates required','topic'=>'Subject area or topic'],
+ 'Electronic Resources Access'=>['resource'=>'Database or e-resource name','access_purpose'=>'Purpose: Teaching, Research or Both','assistance'=>'Access assistance required: Yes or No'],
+ 'Inter-Library Loan/Document Delivery'=>['resource_type'=>'Resource type','title'=>'Title or article title','author'=>'Author','reference'=>'Year, volume, issue or DOI (or unknown)','required_by'=>'Required by'],
+ 'Institutional Repository Service'=>['document_type'=>'Document type','title'=>'Document title','repository_action'=>'Submit, update or retrieve'],
+ 'New Book/Resource Recommendation'=>['title'=>'Book or resource title','author'=>'Author','publication'=>'Publisher, year and ISBN (or unknown)','reason'=>'Reason for recommendation','course'=>'Course, module or programme'],
+ 'Course/Reading List Support'=>['course'=>'Course or module','semester'=>'Semester','reading_type'=>'Essential, recommended or both','reading_list'=>'Reading list or required titles'],
+ 'Library Orientation'=>['topic'=>'Preferred topic','preferred_date'=>'Preferred date','start_time'=>'Start time','end_time'=>'End time','participants'=>'Number of participants'],
+ 'Library Class/Space Booking'=>['purpose'=>'Purpose of booking','preferred_date'=>'Preferred date','start_time'=>'Start time','end_time'=>'End time','participants'=>'Number of participants','requirements'=>'Special requirements (or none)'],
+ 'Other Library Service'=>['details'=>'Describe the service required']];}

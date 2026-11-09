@@ -1,0 +1,1 @@
+(()=>{const d=document.querySelector('#rw-department');if(!d)return;const filter=()=>{document.querySelectorAll('[data-rw-filter]').forEach(s=>{[...s.options].forEach(o=>{if(!o.dataset.department)return;const off=o.dataset.department!==d.value;o.hidden=off;o.disabled=off;if(off&&o.selected)s.value='';});});};d.addEventListener('change',filter);filter();})();

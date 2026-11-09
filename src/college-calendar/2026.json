@@ -1,0 +1,978 @@
+[
+  {
+    "title": "Winter solstice",
+    "start_date": "2026-01-02",
+    "end_date": "2026-01-02",
+    "category": "holiday",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · C20"
+  },
+  {
+    "title": "Traditional Day of Offering",
+    "start_date": "2026-01-19",
+    "end_date": "2026-01-19",
+    "category": "holiday",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · C21"
+  },
+  {
+    "title": "Faculty report to CST for Annual RUB faculty meet",
+    "start_date": "2026-02-02",
+    "end_date": "2026-02-04",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L25"
+  },
+  {
+    "title": "Classroom preparation by maintenance team",
+    "start_date": "2026-02-03",
+    "end_date": "2026-02-03",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L26"
+  },
+  {
+    "title": "Reassessment",
+    "start_date": "2026-02-03",
+    "end_date": "2026-02-04",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K25"
+  },
+  {
+    "title": "Students Report",
+    "start_date": "2026-02-05",
+    "end_date": "2026-02-05",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L27"
+  },
+  {
+    "title": "Registration of the students; Faculty Joins after Annual RUB faculty meet at CST",
+    "start_date": "2026-02-06",
+    "end_date": "2026-02-06",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L28"
+  },
+  {
+    "title": "CAC",
+    "start_date": "2026-02-09",
+    "end_date": "2026-02-09",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J25"
+  },
+  {
+    "title": "Classes start",
+    "start_date": "2026-02-09",
+    "end_date": "2026-02-09",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L29"
+  },
+  {
+    "title": "PBE",
+    "start_date": "2026-02-09",
+    "end_date": "2026-02-09",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J25"
+  },
+  {
+    "title": "RA Results",
+    "start_date": "2026-02-09",
+    "end_date": "2026-02-09",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K26"
+  },
+  {
+    "title": "CRC/PCM/DEPT",
+    "start_date": "2026-02-12",
+    "end_date": "2026-02-12",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J26"
+  },
+  {
+    "title": "CMC",
+    "start_date": "2026-02-13",
+    "end_date": "2026-02-13",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J27"
+  },
+  {
+    "title": "Extra class in place of 20.",
+    "start_date": "2026-02-14",
+    "end_date": "2026-02-14",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J28"
+  },
+  {
+    "title": "Bhutanese New Year",
+    "start_date": "2026-02-18",
+    "end_date": "2026-02-19",
+    "category": "holiday",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · C32"
+  },
+  {
+    "title": "Declared holiday",
+    "start_date": "2026-02-20",
+    "end_date": "2026-02-20",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J29"
+  },
+  {
+    "title": "King's Birth Anniversary",
+    "start_date": "2026-02-21",
+    "end_date": "2026-02-23",
+    "category": "holiday",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · C31"
+  },
+  {
+    "title": "Punakha Dromchoe",
+    "start_date": "2026-02-23",
+    "end_date": "2026-02-25",
+    "category": "local",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · G32"
+  },
+  {
+    "title": "Punakha tshechu",
+    "start_date": "2026-02-26",
+    "end_date": "2026-02-28",
+    "category": "local",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · G32"
+  },
+  {
+    "title": "CRC",
+    "start_date": "2026-03-05",
+    "end_date": "2026-03-05",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J37"
+  },
+  {
+    "title": "Field Attachment Assessment",
+    "start_date": "2026-03-05",
+    "end_date": "2026-03-05",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K36"
+  },
+  {
+    "title": "CMC",
+    "start_date": "2026-03-12",
+    "end_date": "2026-03-12",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J38"
+  },
+  {
+    "title": "CAC",
+    "start_date": "2026-03-19",
+    "end_date": "2026-03-19",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J39"
+  },
+  {
+    "title": "International Conference on Transforming Asia: Sustainable Innovation in Agriculture, Food, Environment, Climate, and Development – 1.0",
+    "start_date": "2026-03-24",
+    "end_date": "2026-03-26",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L36"
+  },
+  {
+    "title": "Student consultation",
+    "start_date": "2026-03-26",
+    "end_date": "2026-03-26",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J40"
+  },
+  {
+    "title": "PBE & CMC",
+    "start_date": "2026-04-02",
+    "end_date": "2026-04-02",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J47"
+  },
+  {
+    "title": "CAC",
+    "start_date": "2026-04-09",
+    "end_date": "2026-04-09",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J48"
+  },
+  {
+    "title": "Question Moderation",
+    "start_date": "2026-04-13",
+    "end_date": "2026-04-15",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K48"
+  },
+  {
+    "title": "CRC",
+    "start_date": "2026-04-16",
+    "end_date": "2026-04-16",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J49"
+  },
+  {
+    "title": "Question Printing",
+    "start_date": "2026-04-16",
+    "end_date": "2026-04-17",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K49"
+  },
+  {
+    "title": "Midterm exams",
+    "start_date": "2026-04-20",
+    "end_date": "2026-04-24",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K50"
+  },
+  {
+    "title": "General Staff",
+    "start_date": "2026-04-23",
+    "end_date": "2026-04-23",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J50"
+  },
+  {
+    "title": "Zhabdrung Kuchoe",
+    "start_date": "2026-04-26",
+    "end_date": "2026-04-26",
+    "category": "holiday",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · C53"
+  },
+  {
+    "title": "PCM",
+    "start_date": "2026-04-30",
+    "end_date": "2026-04-30",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J51"
+  },
+  {
+    "title": "Birth Anniversary of the Third Druk Gyalpo",
+    "start_date": "2026-05-02",
+    "end_date": "2026-05-02",
+    "category": "holiday",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · C64"
+  },
+  {
+    "title": "CRC & CMC",
+    "start_date": "2026-05-07",
+    "end_date": "2026-05-07",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J59"
+  },
+  {
+    "title": "Program evaluation by EE",
+    "start_date": "2026-05-11",
+    "end_date": "2026-05-15",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K60"
+  },
+  {
+    "title": "Student consultation",
+    "start_date": "2026-05-14",
+    "end_date": "2026-05-14",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J60"
+  },
+  {
+    "title": "LMC",
+    "start_date": "2026-05-21",
+    "end_date": "2026-05-21",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J61"
+  },
+  {
+    "title": "CAC",
+    "start_date": "2026-05-28",
+    "end_date": "2026-05-28",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J62"
+  },
+  {
+    "title": "Lord Buddha's Parinirvana (Duechen Nga Zom)",
+    "start_date": "2026-05-31",
+    "end_date": "2026-05-31",
+    "category": "holiday",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · C65"
+  },
+  {
+    "title": "CA compilation",
+    "start_date": "2026-06-01",
+    "end_date": "2026-06-05",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K71"
+  },
+  {
+    "title": "Module feedback",
+    "start_date": "2026-06-01",
+    "end_date": "2026-06-05",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L70"
+  },
+  {
+    "title": "Question Moderation",
+    "start_date": "2026-06-01",
+    "end_date": "2026-06-03",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K69"
+  },
+  {
+    "title": "Defense (UG research)",
+    "start_date": "2026-06-02",
+    "end_date": "2026-06-03",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K74"
+  },
+  {
+    "title": "Royal University Foundation Day",
+    "start_date": "2026-06-02",
+    "end_date": "2026-06-02",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · C75"
+  },
+  {
+    "title": "PBE",
+    "start_date": "2026-06-04",
+    "end_date": "2026-06-04",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J70"
+  },
+  {
+    "title": "Question Printing",
+    "start_date": "2026-06-04",
+    "end_date": "2026-06-05",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K70"
+  },
+  {
+    "title": "CAC",
+    "start_date": "2026-06-05",
+    "end_date": "2026-06-05",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J70"
+  },
+  {
+    "title": "SE exams",
+    "start_date": "2026-06-08",
+    "end_date": "2026-06-19",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K72"
+  },
+  {
+    "title": "CMC",
+    "start_date": "2026-06-11",
+    "end_date": "2026-06-11",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J69"
+  },
+  {
+    "title": "Student vacation",
+    "start_date": "2026-06-20",
+    "end_date": "2026-06-20",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L71"
+  },
+  {
+    "title": "Student Research Meet",
+    "start_date": "2026-06-22",
+    "end_date": "2026-06-22",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K73"
+  },
+  {
+    "title": "Birth Anniversary of Guru Rimpoche",
+    "start_date": "2026-06-24",
+    "end_date": "2026-06-24",
+    "category": "holiday",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · C76"
+  },
+  {
+    "title": "CAC",
+    "start_date": "2026-06-25",
+    "end_date": "2026-06-25",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J72"
+  },
+  {
+    "title": "PBE/Answerscript moderation",
+    "start_date": "2026-06-25",
+    "end_date": "2026-06-25",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J71"
+  },
+  {
+    "title": "Result declaration",
+    "start_date": "2026-06-26",
+    "end_date": "2026-06-26",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L72"
+  },
+  {
+    "title": "Graduation cermony",
+    "start_date": "2026-06-30",
+    "end_date": "2026-06-30",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L73"
+  },
+  {
+    "title": "Annual workshop",
+    "start_date": "2026-07-01",
+    "end_date": "2026-07-02",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J80"
+  },
+  {
+    "title": "Faculty Vacation",
+    "start_date": "2026-07-03",
+    "end_date": "2026-07-03",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L80"
+  },
+  {
+    "title": "First Sermon of Lord Buddha",
+    "start_date": "2026-07-18",
+    "end_date": "2026-07-18",
+    "category": "holiday",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · C87"
+  },
+  {
+    "title": "CMC",
+    "start_date": "2026-07-23",
+    "end_date": "2026-07-23",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J81"
+  },
+  {
+    "title": "Faculty report to CNR",
+    "start_date": "2026-07-23",
+    "end_date": "2026-07-23",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L81"
+  },
+  {
+    "title": "Reassessment",
+    "start_date": "2026-07-23",
+    "end_date": "2026-07-24",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K82"
+  },
+  {
+    "title": "New students report to CNR",
+    "start_date": "2026-07-26",
+    "end_date": "2026-07-26",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L82"
+  },
+  {
+    "title": "New students register",
+    "start_date": "2026-07-27",
+    "end_date": "2026-07-27",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L83"
+  },
+  {
+    "title": "Orientation",
+    "start_date": "2026-07-28",
+    "end_date": "2026-07-29",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J82"
+  },
+  {
+    "title": "CAC (RA result)",
+    "start_date": "2026-07-29",
+    "end_date": "2026-07-29",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J84"
+  },
+  {
+    "title": "PBE (RA result)",
+    "start_date": "2026-07-29",
+    "end_date": "2026-07-29",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J83"
+  },
+  {
+    "title": "Senior students report",
+    "start_date": "2026-07-29",
+    "end_date": "2026-07-29",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L84"
+  },
+  {
+    "title": "CRC",
+    "start_date": "2026-07-30",
+    "end_date": "2026-07-30",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J85"
+  },
+  {
+    "title": "Registration of senior students & classes start for new students",
+    "start_date": "2026-07-30",
+    "end_date": "2026-07-30",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L85"
+  },
+  {
+    "title": "Classes start for senior students",
+    "start_date": "2026-07-31",
+    "end_date": "2026-07-31",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L86"
+  },
+  {
+    "title": "PCM",
+    "start_date": "2026-08-06",
+    "end_date": "2026-08-06",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J92"
+  },
+  {
+    "title": "Student consultation",
+    "start_date": "2026-08-13",
+    "end_date": "2026-08-13",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J93"
+  },
+  {
+    "title": "CAC",
+    "start_date": "2026-08-20",
+    "end_date": "2026-08-20",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J94"
+  },
+  {
+    "title": "CRC & CMC",
+    "start_date": "2026-08-27",
+    "end_date": "2026-08-27",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J95"
+  },
+  {
+    "title": "Special Punakha Tshechu",
+    "start_date": "2026-09-02",
+    "end_date": "2026-09-02",
+    "category": "holiday",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · C109"
+  },
+  {
+    "title": "CAC",
+    "start_date": "2026-09-03",
+    "end_date": "2026-09-03",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J103"
+  },
+  {
+    "title": "Summer School [INEE]",
+    "start_date": "2026-09-04",
+    "end_date": "2026-09-20",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L103"
+  },
+  {
+    "title": "Question moderation",
+    "start_date": "2026-09-07",
+    "end_date": "2026-09-11",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K104"
+  },
+  {
+    "title": "CMC",
+    "start_date": "2026-09-10",
+    "end_date": "2026-09-10",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J104"
+  },
+  {
+    "title": "Midterm exams",
+    "start_date": "2026-09-14",
+    "end_date": "2026-09-18",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K106"
+  },
+  {
+    "title": "CRC",
+    "start_date": "2026-09-17",
+    "end_date": "2026-09-17",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J105"
+  },
+  {
+    "title": "Blessed Rainy Day",
+    "start_date": "2026-09-23",
+    "end_date": "2026-09-23",
+    "category": "holiday",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · C110"
+  },
+  {
+    "title": "LDC",
+    "start_date": "2026-10-01",
+    "end_date": "2026-10-01",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J115"
+  },
+  {
+    "title": "Student consultation",
+    "start_date": "2026-10-08",
+    "end_date": "2026-10-08",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J114"
+  },
+  {
+    "title": "CAC/LMC",
+    "start_date": "2026-10-15",
+    "end_date": "2026-10-15",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J116"
+  },
+  {
+    "title": "Defense of UG research",
+    "start_date": "2026-10-19",
+    "end_date": "2026-10-23",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K117"
+  },
+  {
+    "title": "Dassain",
+    "start_date": "2026-10-21",
+    "end_date": "2026-10-21",
+    "category": "holiday",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · C120"
+  },
+  {
+    "title": "CMC",
+    "start_date": "2026-10-22",
+    "end_date": "2026-10-22",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J117"
+  },
+  {
+    "title": "CRC",
+    "start_date": "2026-10-29",
+    "end_date": "2026-10-29",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J118"
+  },
+  {
+    "title": "PCM/DEPT",
+    "start_date": "2026-10-29",
+    "end_date": "2026-10-29",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J119"
+  },
+  {
+    "title": "Fireline preparation",
+    "start_date": "2026-10-31",
+    "end_date": "2026-11-08",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L128"
+  },
+  {
+    "title": "Descending Day of Lord Buddha",
+    "start_date": "2026-11-01",
+    "end_date": "2026-11-01",
+    "category": "holiday",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · C131"
+  },
+  {
+    "title": "King's Coronation Day",
+    "start_date": "2026-11-01",
+    "end_date": "2026-11-01",
+    "category": "holiday",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · C131"
+  },
+  {
+    "title": "Moderation",
+    "start_date": "2026-11-02",
+    "end_date": "2026-11-06",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J127"
+  },
+  {
+    "title": "Program evaluation by EE",
+    "start_date": "2026-11-02",
+    "end_date": "2026-11-06",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K128"
+  },
+  {
+    "title": "PCM/DEPT",
+    "start_date": "2026-11-05",
+    "end_date": "2026-11-05",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J125"
+  },
+  {
+    "title": "CA compilation",
+    "start_date": "2026-11-09",
+    "end_date": "2026-11-13",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K125"
+  },
+  {
+    "title": "Last week of teaching and learning",
+    "start_date": "2026-11-09",
+    "end_date": "2026-11-13",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L125"
+  },
+  {
+    "title": "Module feedback",
+    "start_date": "2026-11-09",
+    "end_date": "2026-11-13",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K126"
+  },
+  {
+    "title": "PBE",
+    "start_date": "2026-11-09",
+    "end_date": "2026-11-11",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J127"
+  },
+  {
+    "title": "College Foundation Day",
+    "start_date": "2026-11-11",
+    "end_date": "2026-11-11",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L126"
+  },
+  {
+    "title": "Fourth King's Birth Anniversary / Constitution Day",
+    "start_date": "2026-11-11",
+    "end_date": "2026-11-11",
+    "category": "holiday",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · C132"
+  },
+  {
+    "title": "CMC",
+    "start_date": "2026-11-12",
+    "end_date": "2026-11-12",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J126"
+  },
+  {
+    "title": "Question Printing",
+    "start_date": "2026-11-12",
+    "end_date": "2026-11-13",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J128"
+  },
+  {
+    "title": "CAC",
+    "start_date": "2026-11-13",
+    "end_date": "2026-11-13",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J129"
+  },
+  {
+    "title": "SE exams",
+    "start_date": "2026-11-16",
+    "end_date": "2026-11-27",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K127"
+  },
+  {
+    "title": "CRC",
+    "start_date": "2026-11-26",
+    "end_date": "2026-11-26",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J130"
+  },
+  {
+    "title": "Marking & Result Compilation",
+    "start_date": "2026-11-28",
+    "end_date": "2026-12-07",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K130; K136"
+  },
+  {
+    "title": "Student vacation",
+    "start_date": "2026-11-28",
+    "end_date": "2026-11-28",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L127"
+  },
+  {
+    "title": "Internship/FA orientaiton",
+    "start_date": "2026-11-30",
+    "end_date": "2026-11-30",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K129"
+  },
+  {
+    "title": "Internship/ FA orientation",
+    "start_date": "2026-12-01",
+    "end_date": "2026-12-01",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K138"
+  },
+  {
+    "title": "Semester Planning and Module Allocation",
+    "start_date": "2026-12-03",
+    "end_date": "2026-12-03",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K137"
+  },
+  {
+    "title": "PBE / moderation committee",
+    "start_date": "2026-12-09",
+    "end_date": "2026-12-11",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J137"
+  },
+  {
+    "title": "CRC",
+    "start_date": "2026-12-11",
+    "end_date": "2026-12-11",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J136"
+  },
+  {
+    "title": "CAC & CMC",
+    "start_date": "2026-12-14",
+    "end_date": "2026-12-14",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J138"
+  },
+  {
+    "title": "Midterm workshop",
+    "start_date": "2026-12-15",
+    "end_date": "2026-12-16",
+    "category": "meeting",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · J139"
+  },
+  {
+    "title": "National Day",
+    "start_date": "2026-12-17",
+    "end_date": "2026-12-17",
+    "category": "holiday",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · C142"
+  },
+  {
+    "title": "Faculty vacation",
+    "start_date": "2026-12-18",
+    "end_date": "2026-12-18",
+    "category": "other",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · L140"
+  },
+  {
+    "title": "Result Declaration",
+    "start_date": "2026-12-18",
+    "end_date": "2026-12-18",
+    "category": "assessment",
+    "description": "",
+    "source": "College Calendar 2026.xlsx · K139"
+  }
+]
